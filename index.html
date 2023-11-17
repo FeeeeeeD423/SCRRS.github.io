@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aplicativo de Gestión de Consultas</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="menu-principal">
+    <h1>Menú Principal</h1>
+    <button id="registroConsulta">Registro Consulta</button>
+    <button id="repositorio">Repositorio</button>
+    <button id="ingresoReporte">Ingreso de reporte diario</button>
+    <button id="insumos">Insumos</button>
+</div>
+
+<div class="registro-consulta" style="display: none;">
+    <h1>Registro de consultas</h1>
+    <form id="formConsulta">
+        <label for="nombreUsuario">Nombre de usuario/a:</label>
+        <input type="text" id="nombreUsuario" name="nombreUsuario">
+
+        <label for="plataforma">Plataforma:</label>
+        <select id="plataforma" name="plataforma">
+            <option value="x">X</option>
+            <option value="facebook">Facebook</option>
+            <option value="instagram">Instagram</option>
+        </select>
+
+        <label for="tipoMensaje">Tipo Mensaje:</label>
+        <select id="tipoMensaje" name="tipoMensaje">
+            <option value="publico">Público</option>
+            <option value="dm">DM</option>
+        </select>
+
+        <label for="categoriaConsulta">Categoría consulta:</label>
+        <select id="categoriaConsulta" name="categoriaConsulta">
+            <option value="vocalesMesa">Vocales de Mesa</option>
+            <option value="facilitador">Facilitador</option>
+        </select>
+
+        <label for="comentarioCM">Comentario CM:</label>
+        <textarea id="comentarioCM" name="comentarioCM"></textarea>
+
+        <label for="consulta">Consulta:</label>
+        <textarea id="consulta" name="consulta"></textarea>
+
+        <label for="respuestaTentativa">Respuesta tentativa:</label>
+        <textarea id="respuestaTentativa" name="respuestaTentativa"></textarea>
+
+        <label for="respuestaFinal">Respuesta final:</label>
+        <textarea id="respuestaFinal" name="respuestaFinal"></textarea>
+
+        <button type="button" id="ingresar">Ingresar</button>
+        <button type="button" id="limpiar">Limpiar</button>
+        <button type="button" id="copiar">Copiar</button>
+        <button type="button" id="volver">Volver</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
