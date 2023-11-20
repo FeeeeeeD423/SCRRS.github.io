@@ -1,69 +1,87 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.menu-principal {
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.menu-principal h1 {
+    color: white;
+    margin-bottom: 20px;
 }
 
 .menu-principal button {
-    background-color: red;
+    background-color: #007bff;
     color: white;
-    padding: 10px;
-    margin: 5px;
+    padding: 10px 15px;
+    margin: 10px;
     border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .menu-principal button:hover {
-    background-color: darkred;
+    background-color: #0056b3;
 }
 
 .registro-consulta {
     background-color: #f4f4f4;
     padding: 20px;
     margin-top: 20px;
+    display: none; /* Oculto inicialmente */
 }
 
 .registro-consulta h1 {
     color: #333;
+    margin-bottom: 20px;
 }
 
 .registro-consulta form {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
 }
 
 .registro-consulta form label {
-    text-align: right;
-    padding-right: 10px;
+    margin-bottom: 5px;
 }
 
 .registro-consulta form input,
 .registro-consulta form select,
 .registro-consulta form textarea {
     width: 100%;
-    padding: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
 }
 
 .registro-consulta form button {
-    grid-column: span 2;
     padding: 10px;
-    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
 }
 
 #ingresar {
-    background-color: green;
-    color: white;
-}
-
-#limpiar {
-    background-color: blue;
+    background-color: #28a745;
     color: white;
 }
 
 #copiar {
-    background-color: purple;
+    background-color: #17a2b8;
     color: white;
 }
 
 #volver {
-    background-color: grey;
+    background-color: #6c757d;
     color: white;
 }
