@@ -13,6 +13,7 @@
     <button id="repositorio">Repositorio</button>
     <button id="ingresoReporte">Ingreso de reporte diario</button>
     <button id="insumos">Insumos</button>
+    <button id="preferencias">Preferencias</button>
 </div>
 
 <div class="registro-consulta" style="display: none;">
@@ -23,6 +24,7 @@
 
         <label for="plataforma">Plataforma:</label>
         <select id="plataforma" name="plataforma">
+            <option value="">Seleccionar</option>
             <option value="x">X</option>
             <option value="facebook">Facebook</option>
             <option value="instagram">Instagram</option>
@@ -30,12 +32,14 @@
 
         <label for="tipoMensaje">Tipo Mensaje:</label>
         <select id="tipoMensaje" name="tipoMensaje">
+            <option value="">Seleccionar</option>
             <option value="publico">Público</option>
             <option value="dm">DM</option>
         </select>
 
         <label for="categoriaConsulta">Categoría consulta:</label>
         <select id="categoriaConsulta" name="categoriaConsulta">
+            <option value="">Seleccionar</option>
             <option value="vocalesMesa">Vocales de Mesa</option>
             <option value="facilitador">Facilitador</option>
         </select>
@@ -53,7 +57,6 @@
         <textarea id="respuestaFinal" name="respuestaFinal"></textarea>
 
         <button type="button" id="ingresar">Ingresar</button>
-        <button type="button" id="limpiar">Limpiar</button>
         <button type="button" id="copiar">Copiar</button>
         <button type="button" id="volver">Volver</button>
     </form>
@@ -62,3 +65,4 @@
 <script src="script.js"></script>
 </body>
 </html>
+
